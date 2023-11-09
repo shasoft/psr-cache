@@ -8,8 +8,10 @@
         "php array"
     ],
     "require": {
-        "psr/cache": "^3"
+        "psr/cache": "^3",
+        "shasoft/filesystem": "*"
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Shasoft\\PsrCache\\": "classes"

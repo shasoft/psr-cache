@@ -24,6 +24,7 @@ abstract class Base extends TestCase
     public function tearDown(): void
     {
         // Уничтожить
+        $this->pool->clear();
         $this->pool = null;
         parent::tearDown();
     }
