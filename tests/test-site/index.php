@@ -5,7 +5,7 @@ use Shasoft\Batch\BatchConfig;
 use Shasoft\Batch\BatchManager;
 use Shasoft\Batch\Tests\CacheDebug;
 
-require_once __DIR__ . '/../classes/bootstrap.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 // Включить логирование
 BatchDebug::log(true);

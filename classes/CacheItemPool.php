@@ -7,7 +7,7 @@ use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Shasoft\PsrCache\Adapter\CacheAdapter;
 
-
+// https://www.php-fig.org/psr/psr-6/
 class CacheItemPool implements CacheItemPoolInterface
 {
     // Конструктор

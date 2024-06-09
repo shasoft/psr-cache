@@ -11,6 +11,14 @@ abstract class Base extends TestCase
     //
     protected array $keys = ['a1', 'b2', 'c3', 'd4'];
     protected array $values = ['#1', '#2', '#3', '#4'];
+    // Настройка среды окружения теста
+    static public function settingUpTheEnvironment(\RunManager $runManager, string $bootstrap): void
+    {
+        $runManager->setWebServer(
+            __DIR__ . '/../../test-site',
+            ['shasoft-test.ru']
+        );
+    }
     // Создать объект КЭШа
     abstract protected function getPool(): CacheItemPool;
     // 
