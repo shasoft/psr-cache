@@ -3,6 +3,7 @@
 namespace Shasoft\PsrCache\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
+use Shasoft\Ci\SettingEnvironment;
 use Shasoft\PsrCache\CacheItemPool;
 
 abstract class Base extends TestCase
@@ -12,11 +13,12 @@ abstract class Base extends TestCase
     protected array $keys = ['a1', 'b2', 'c3', 'd4'];
     protected array $values = ['#1', '#2', '#3', '#4'];
     // Настройка среды окружения теста
-    static public function settingUpTheEnvironment(\RunManager $runManager, string $bootstrap): void
+    public static function settingEnvironment(SettingEnvironment $setting): void
     {
-        $runManager->setWebServer(
+        // Установить тестовый домен
+        $setting->setWebServer(
             __DIR__ . '/../../test-site',
-            ['shasoft-test.ru']
+            [$setting->config()->getOrFail('testDomain')]
         );
     }
     // Создать объект КЭШа

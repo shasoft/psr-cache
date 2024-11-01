@@ -1,35 +1,218 @@
 {
-    "name": "shasoft/psr-cache",
-    "description": "PSR-16 cache adapters",
-    "license": "MIT",
-    "keywords": [
-        "cache",
-        "psr-16",
-        "php array"
-    ],
-    "require": {
-        "psr/cache": "^3",
-        "shasoft/filesystem": "*"
+  "name": "shasoft/psr-cache",
+  "description": "PSR-16 cache adapters",
+  "license": "MIT",
+  "keywords": [
+    "cache",
+    "psr-16",
+    "php array"
+  ],
+  "require": {
+    "psr/cache": "^3",
+    "shasoft/filesystem": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Shasoft\\PsrCache\\": "classes"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10",
+    "robiningelbrecht/phpunit-pretty-print": "^1.2",
+    "shasoft/ci-php": "*"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Shasoft\\PsrCache\\Tests\\": "tests/classes"
+    }
+  },
+  "authors": [
+    {
+      "name": "Shabanov Valera",
+      "email": "git-shasoft-psr-cache@shasoft.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\array-readonly"
     },
-    "minimum-stability": "dev",
-    "autoload": {
-        "psr-4": {
-            "Shasoft\\PsrCache\\": "classes"
-        }
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\batch"
     },
-    "require-dev": {
-        "phpunit/phpunit": "^10",
-        "robiningelbrecht/phpunit-pretty-print": "^1.2"
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\cache"
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Shasoft\\PsrCache\\Tests\\": "tests/classes"
-        }
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\cache-invalidation"
     },
-    "authors": [
-        {
-            "name": "Shabanov Valera",
-            "email": "shasoft_psr-cache@shasoft.com"
-        }
-    ]
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\cdump"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\ci-php"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\composer"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\console"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\data"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\db-schema"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\db-schema-dev"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\db-tool"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\dump"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\environment"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\filesystem"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\http-factory"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\http-mime"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\http-response"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\opts"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\psr-cache"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\reflection"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-api"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-auth"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-axios"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-cache"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-cookie"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-crypto"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-database"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-demo"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-form"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-i18n"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-mailer"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-message"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-quasar"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-seo"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-store"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-todolist"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-token"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\s-twig"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\samoyed-cmg"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\sql-query-builder"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\test"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\test-gitea"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\test-sub"
+    },
+    {
+      "type": "path",
+      "url": "E:\\Development\\repositories\\PHP\\shasoft\\web-browser"
+    }
+  ]
 }

@@ -3,3 +3,4 @@ phpunit.xml
 composer.lock
 .phpunit.cache/
 .phpunit.result.cache
+phpunit.xml.dist
