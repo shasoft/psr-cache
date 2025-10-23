@@ -11,9 +11,7 @@ use Shasoft\PsrCache\Adapter\CacheAdapter;
 class CacheItemPool implements CacheItemPoolInterface
 {
     // Конструктор
-    public function __construct(protected CacheAdapter $adapter)
-    {
-    }
+    public function __construct(protected CacheAdapter $adapter) {}
     // Получить элементы КЕШа
     protected function _getItems(array $keys): array
     {
